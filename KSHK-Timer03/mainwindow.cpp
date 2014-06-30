@@ -56,6 +56,7 @@ void MainWindow::finished(int rc)
                nvalue0 = value0 - lvalue0;
                ui->ens33_rx->setText(args.at(2));
                ui->ens33_tx->setText(args.at(6));
+               ui->rate_value->setText(QString::number(nvalue0) + "kb/s");
                lvalue0 = value0;
                return;
            }

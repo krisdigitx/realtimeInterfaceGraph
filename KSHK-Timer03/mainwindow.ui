@@ -6,72 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>710</width>
+    <height>459</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="ens33tx">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>71</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>ENS33-RX</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="ens33_rx">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>20</y>
-      <width>59</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="rns33tx">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>40</y>
-      <width>71</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>ENS33-TX</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="ens33_tx">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>40</y>
-      <width>59</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
    <widget class="Line" name="line">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>70</y>
-      <width>361</width>
+      <y>80</y>
+      <width>691</width>
       <height>16</height>
      </rect>
     </property>
@@ -82,12 +30,79 @@
    <widget class="QCustomPlot" name="customplot" native="true">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>80</y>
-      <width>371</width>
-      <height>161</height>
+      <x>9</x>
+      <y>102</y>
+      <width>691</width>
+      <height>311</height>
      </rect>
     </property>
+    <zorder>layoutWidget</zorder>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>231</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="ens33tx">
+       <property name="text">
+        <string>ETH0-RX</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="ens33_rx">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="rate_label">
+       <property name="text">
+        <string>Rate</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="rate_value">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>129</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="rns33tx">
+       <property name="text">
+        <string>ETH0-TX</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="ens33_tx">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -95,7 +110,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>710</width>
      <height>25</height>
     </rect>
    </property>
